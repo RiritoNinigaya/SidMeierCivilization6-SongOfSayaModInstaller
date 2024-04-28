@@ -57,8 +57,8 @@ begin
     ExtractTemporaryFile('SlavicTrap_TheCossack.mp3');
     mp3Name := ExpandConstant('{tmp}\SlavicTrap_TheCossack.mp3');
     BASS_Init(-1, 48000, 0, 0, 0);
-    mp3Handle := BASS_StreamCreateFile(FALSE, PAnsiChar(mp3Name), 0, 0, 0, 0, BASS_SAMPLE_LOOP);
     BASS_Start();
+    mp3Handle := BASS_StreamCreateFile(FALSE, PAnsiChar(mp3Name), 0, 0, 0, 0, BASS_SAMPLE_LOOP);
     BASS_ChannelPlay(mp3Handle, False);
 end;
 procedure DeinitializeSetup();
