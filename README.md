@@ -1,0 +1,2 @@
+# SidMeierCivilization6-SongOfSayaModInstaller
+SidMeierCivilization6-SongOfSayaModInstaller by RiritoNinigaya
