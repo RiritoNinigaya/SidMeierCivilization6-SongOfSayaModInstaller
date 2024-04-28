@@ -61,7 +61,11 @@ begin
     BASS_Start();
     BASS_ChannelPlay(mp3Handle, False);
 end;
-
+procedure DeinitializeSetup();
+begin
+  BASS_Free();
+  BASS_Stop();
+end;
 [Files]
 Source: "E:\SteamLibrary\steamapps\workshop\content\289070\3159722119\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "C:\Include_InnoSetup\bass.dll"; Flags: dontcopy ignoreversion
